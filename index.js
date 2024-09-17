@@ -1,7 +1,7 @@
 const express = require('express')
 const Unblocker = require('unblocker');
 const app = express();
-const unblocker = new Unblocker({prefix: '/proxy/'});
+const unblocker = new Unblocker({prefix: '/'});
 const { exec } = require("child_process");
 
 // this must be one of the first app.use() calls and must not be on a subdirectory to work properly
